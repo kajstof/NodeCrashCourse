@@ -1,4 +1,4 @@
-const path = require('path');
+import * as path from 'path';
 
 // Base file name
 console.log(path.basename(__filename));

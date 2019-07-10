@@ -1,4 +1,4 @@
-const EventEmitter = require('events');
+import { EventEmitter } from 'events';
 
 // Create class
 class MyEmitter extends EventEmitter { }

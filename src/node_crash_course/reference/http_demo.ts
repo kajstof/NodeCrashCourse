@@ -1,4 +1,4 @@
-const http = require('http');
+import * as http from 'http';
 
 // Create server object
 http.createServer((req, res) => {

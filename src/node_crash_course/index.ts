@@ -1,6 +1,6 @@
-const http = require('http');
-const path = require('path');
-const fs = require('fs');
+import * as http from 'http';
+import * as path from 'path';
+import * as fs from 'fs';
 
 const server = http.createServer((req, res) => {
   // if (req.url === '/') {
@@ -30,7 +30,7 @@ const server = http.createServer((req, res) => {
   // }
 
   // Build file path
-  let filePath = path.join(__dirname, 'public', req.url === '/' ? 'index.html' : req.url);
+  let filePath = path.join(__dirname, 'public', (req.url === undefined || req.url === '/') ? 'index.html' : req.url);
 
   // Extension of file
   let extname = path.extname(filePath);

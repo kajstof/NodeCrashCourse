@@ -1,5 +1,5 @@
-const fs = require('fs');
-const path = require('path');
+import * as fs from 'fs';
+import * as path from 'path';
 
 // Create folder
 // fs.mkdir(path.join(__dirname, '/test'), {}, (err) => {

@@ -1,4 +1,4 @@
-const os = require('os');
+import * as os from 'os';
 
 // Platform
 console.log(os.platform());
